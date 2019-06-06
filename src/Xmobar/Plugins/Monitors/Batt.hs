@@ -290,9 +290,7 @@ formatResult res bopt = do
       do l <- fmtPercent x sp
          ws <- fmtWatts w bopt suffix d
          si <- getIconPattern bopt s x
-         st <- showWithColors'
-                 (fmtStatus bopt s nas (getBattStatus x bopt))
-                 (100 * x)
+         let st = fmtStatus bopt s nas (getBattStatus x bopt)
          parseTemplate (l ++ [st, fmtTime $ floor t, ws, si])
     NA -> getConfigValue naString
   where fmtPercent :: Float -> Bool -> Monitor [String]
