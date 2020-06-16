@@ -34,9 +34,6 @@ _New features_
   - New plugin `HandleReader` for reading data from a Haskell `Handle`. This is
     useful if you are running xmobar from within a Haskell program.
   - Build with ghc 8.10 allowed.
-  - Optimize date plugin by avoiding calling getTimeZone for each of
-    the time the date has to be updated. Instead, it's computed once
-    at the start and re-used for each invocation.
   - Optimize Weather and UVMeter plugin by using global Manager
     instead of creating for each http request when useManager is
     explicitly configured as False.
