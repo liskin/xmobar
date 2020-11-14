@@ -104,7 +104,8 @@ library
                      Xmobar.Plugins.Monitors.Common.Types,
                      Xmobar.Plugins.Monitors.Common.Run,
                      Xmobar.Plugins.Monitors.Common,
-                     Xmobar.Plugins.Monitors.Cpu
+                     Xmobar.Plugins.Monitors.Cpu,
+                     Xmobar.Run.Actions
 
     other-modules: Paths_xmobar,
                    Xmobar.Config.Types,
@@ -114,7 +115,6 @@ library
                    Xmobar.Run.Template,
                    Xmobar.Run.Exec,
                    Xmobar.Run.Runnable
-                   Xmobar.Run.Actions,
                    Xmobar.Run.Parsers,
                    Xmobar.Run.Loop,
                    Xmobar.App.Config,
