@@ -96,6 +96,7 @@ library
     hs-source-dirs:  src
 
     exposed-modules: Xmobar,
+                     Xmobar.X11.Actions,
                      Xmobar.Plugins.Monitors.Common.Types,
                      Xmobar.Plugins.Monitors.Common.Run,
                      Xmobar.Plugins.Monitors.Cpu
@@ -120,7 +121,6 @@ library
                    Xmobar.System.Localize,
                    Xmobar.System.Signal,
                    Xmobar.System.Kbd,
-                   Xmobar.X11.Actions,
                    Xmobar.X11.Events,
                    Xmobar.X11.Parsers,
                    Xmobar.X11.Types,
